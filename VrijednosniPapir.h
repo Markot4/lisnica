@@ -2,9 +2,13 @@
 #include <iostream>
 using namespace std;
 
-class VrijednosniPapir
-{
-	string oznaka;
+namespace markot4 {
 
-};
+	class VrijednosniPapir
+	{
+		string oznaka;
+
+	};
+}
+
 

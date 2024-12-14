@@ -1,7 +1,8 @@
 #pragma once
 #include "VrijednosniPapir.h"
-class Obveznica :
-    public VrijednosniPapir
-{
-};
-
+namespace markot4 {
+    class Obveznica :
+        public VrijednosniPapir
+    {
+    };
+}

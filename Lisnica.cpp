@@ -2,9 +2,13 @@
 //
 
 #include <iostream>
+#include "LisnicaClass.h"
 
+
+using namespace markot4;
 int main()
 {
+    LisnicaClass lisnica;
     std::cout << "Hello World!\n";
 }
 

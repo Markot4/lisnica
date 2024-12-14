@@ -1,7 +1,11 @@
 #pragma once
 #include "VrijednosniPapir.h"
-class Dionica :
-    public VrijednosniPapir
-{
-};
 
+namespace markot4 {
+
+    class Dionica :
+        public VrijednosniPapir
+    {
+    };
+
+}
