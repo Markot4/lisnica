@@ -127,7 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dionica.cpp" />
     <ClCompile Include="Lisnica.cpp" />
+    <ClCompile Include="LisnicaClass.cpp" />
+    <ClCompile Include="Obveznica.cpp" />
+    <ClCompile Include="VrijednosniPapir.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dionica.h" />
+    <ClInclude Include="LisnicaClass.h" />
+    <ClInclude Include="Obveznica.h" />
+    <ClInclude Include="VrijednosniPapir.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
