@@ -9,6 +9,10 @@ using namespace markot4;
 int main()
 {
     LisnicaClass lisnica;
+
+    VrijednosniPapir vp = VrijednosniPapir("ATl-A-R");
+    cout << vp.oznaka << endl;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

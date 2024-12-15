@@ -6,7 +6,9 @@ namespace markot4 {
 
 	class VrijednosniPapir
 	{
-		string oznaka;
+		public:
+			string oznaka;
+			VrijednosniPapir(string oznaka);
 
 	};
 }
