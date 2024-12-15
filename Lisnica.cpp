@@ -9,7 +9,6 @@ using namespace markot4;
 int main()
 {
     LisnicaClass lisnica;
-    std::cout << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
