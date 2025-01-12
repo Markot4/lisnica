@@ -5,6 +5,12 @@ using namespace std;
 namespace markot4 {
 	class LisnicaClass
 	{
+	private:
+		VrijednosniPapir* array;
+		uint32_t size;
+		
+	public:
+		
 		void dodajVrijednosniPapir(VrijednosniPapir vp);
 		void izbaciVrijednosniPapir(string oznaka);
 		int promjenaKolicine(int promjena, string oznaka); // vrati novu kolicinu
@@ -16,6 +22,7 @@ namespace markot4 {
 		double sveObveznice(); // vraca ukupnu vrijednost svih obveznica u lisnici
 		int vrijednostCijeleLisnice();  // vraca ukupnu vrijednost cijele lisnice
 		void sadrzajCijeleLisnice(); // ispisuje sadrzaj cijele lisnice
+		LisnicaClass();
 	};
 }
 

@@ -9,6 +9,7 @@ namespace markot4 {
 		public:
 			string oznaka;
 			VrijednosniPapir(string oznaka);
+			VrijednosniPapir();
 
 	};
 }

@@ -3,7 +3,16 @@
 
 namespace markot4 {
 	void LisnicaClass::dodajVrijednosniPapir(VrijednosniPapir vp){
-
+		VrijednosniPapir* _newArray = new VrijednosniPapir[size + 1];
+		for (uint32_t i = 0; i < size; i++) {
+			_newArray[i] = array[i];
+			
+		}
+		delete[] array;
+		array = _newArray;
+		array[size] = vp;
+		size++;
+		return;
 	}
 
 	void LisnicaClass::izbaciVrijednosniPapir(string oznaka) {
@@ -46,5 +55,8 @@ namespace markot4 {
 
 	void LisnicaClass::sadrzajCijeleLisnice() {
 
+	}
+	LisnicaClass::LisnicaClass() {
+		size = 0;
 	}
 }
