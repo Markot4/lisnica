@@ -16,7 +16,22 @@ namespace markot4 {
 	}
 
 	void LisnicaClass::izbaciVrijednosniPapir(string oznaka) {
-
+		VrijednosniPapir* _newArray = new VrijednosniPapir[size - 1];
+		int j=0;
+		for (uint32_t i = 0; i < size; i++) {
+			VrijednosniPapir vp = array[i];
+			if (vp.oznaka != oznaka) {
+				_newArray[j] = array[i];
+				j++;
+			}
+		
+		}
+		if (j<size-1){
+			delete[] array;
+			array = _newArray;
+			size--;
+		}
+		return;
 	}
 
 	int LisnicaClass::promjenaKolicine(int promjena, string oznaka) {
