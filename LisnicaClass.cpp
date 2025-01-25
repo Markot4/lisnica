@@ -3,39 +3,31 @@
 
 namespace markot4 {
 	void LisnicaClass::dodajVrijednosniPapir(VrijednosniPapir vp){
-		VrijednosniPapir* _newArray = new VrijednosniPapir[size + 1];
-		for (uint32_t i = 0; i < size; i++) {
-			_newArray[i] = array[i];
-			
-		}
-		delete[] array;
-		array = _newArray;
-		array[size] = vp;
-		size++;
+		papiri.push_back(vp);
 		return;
 	}
 
 	void LisnicaClass::izbaciVrijednosniPapir(string oznaka) {
-		VrijednosniPapir* _newArray = new VrijednosniPapir[size - 1];
-		int j=0;
-		for (uint32_t i = 0; i < size; i++) {
-			VrijednosniPapir vp = array[i];
-			if (vp.oznaka != oznaka) {
-				_newArray[j] = array[i];
-				j++;
+		int ix = -1;
+		for (int i = 0; i < papiri.size();i++) {
+			VrijednosniPapir &vp = papiri[i];
+			if (vp.oznaka == oznaka) {
+				ix = i;
 			}
-		
 		}
-		if (j<size-1){
-			delete[] array;
-			array = _newArray;
-			size--;
+		if (ix >= 0) {
+			papiri.erase(papiri.begin() + ix);
 		}
 		return;
 	}
 
 	int LisnicaClass::promjenaKolicine(int promjena, string oznaka) {
-
+		for (int i = 0; i < papiri.size(); i++) {
+			VrijednosniPapir& vp = papiri[i];
+			if (vp.oznaka == oznaka) {
+				vp.kolicina += promjena;
+			}
+		}
 		return 0;
 	}
 
@@ -72,6 +64,6 @@ namespace markot4 {
 
 	}
 	LisnicaClass::LisnicaClass() {
-		size = 0;
+			
 	}
 }

@@ -1,13 +1,13 @@
 #pragma once
 #include <iostream>
 #include "VrijednosniPapir.h"
+#include <vector>
 using namespace std;
 namespace markot4 {
 	class LisnicaClass
 	{
 	private:
-		VrijednosniPapir* array;
-		uint32_t size;
+		vector<VrijednosniPapir> papiri;
 		
 	public:
 		

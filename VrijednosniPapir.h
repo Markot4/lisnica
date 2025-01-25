@@ -10,7 +10,7 @@ namespace markot4 {
 			string oznaka;
 			VrijednosniPapir(string oznaka);
 			VrijednosniPapir();
-
+			int kolicina;
 	};
 }
 
