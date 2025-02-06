@@ -20,7 +20,7 @@ namespace markot4 {
 		double vrijPoVrijPapir(string oznaka); // vraca ukupnu vrijednost nekog papira u lisnici
 		double sveDionice(); // vraca ukupnu vrijednost svih dionica u lisnici
 		double sveObveznice(); // vraca ukupnu vrijednost svih obveznica u lisnici
-		int vrijednostCijeleLisnice();  // vraca ukupnu vrijednost cijele lisnice
+		double vrijednostCijeleLisnice();  // vraca ukupnu vrijednost cijele lisnice
 		void sadrzajCijeleLisnice(); // ispisuje sadrzaj cijele lisnice
 		LisnicaClass();
 	};

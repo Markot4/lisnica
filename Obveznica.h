@@ -1,11 +1,15 @@
 #pragma once
 #include "VrijednosniPapir.h"
+
 namespace markot4 {
-    class Obveznica :
-        public VrijednosniPapir
-    {
-        double nominalnaCijena;
-        Obveznica(string ime);
-        Obveznica(string ime, double nominalnaCijena) ;
+    class Obveznica : public VrijednosniPapir {
+        
+        public:
+            Obveznica(string oznaka);
+            Obveznica(string oznaka, double cijena);
+
+            void postaviCijenu(double novaCijena);
+            double dohvatiCijenu() const;
+            double izracunajVrijednost();
     };
 }
