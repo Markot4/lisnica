@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
 
     LisnicaClass lisnica;
     string naredba = argv[1];
-
+    // Ucitati podatke iz datoteke u lisnicu i na kraju ako je bilo promjena zapisati ih ponovo u datoteku
     if (naredba == "dodaj" && argc >= 4) {
         string tip = argv[2];
         string oznaka = argv[3];

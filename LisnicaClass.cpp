@@ -41,7 +41,7 @@ namespace markot4 {
 		for (int i = 0; i < papiri.size(); i++) {
 			VrijednosniPapir& vp = papiri[i];
 			if (vp.oznaka == oznaka) {
-				vp.cijena += cijena;
+				vp.cijena = cijena;
 			}
 		}
 	}
@@ -86,6 +86,7 @@ namespace markot4 {
 		for (int i = 0; i < papiri.size(); i++) {
 			VrijednosniPapir& vp = papiri[i];
 			if (vp.oznaka == oznaka) {
+				//todo razlicito za dionicu i za obveznicu
 				return vp.kolicina * vp.cijena;
 			}
 		}
